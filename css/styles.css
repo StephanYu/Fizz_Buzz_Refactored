@@ -1,0 +1,143 @@
+/*  
+/* TEMPORARY AID. REMOVE AFTER USE. */
+
+/** { 
+  outline: 1px solid black;
+}*/
+
+/*------------------- END OF TEMPORARY AID ---------------------*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+/*Sticky Footer Solution
+by Steve Hatcher 
+http://stever.ca
+http://www.cssstickyfooter.com*/
+
+
+* {
+  margin:0;
+  padding:0;
+} 
+
+/* must declare 0 margins on everything, also for main layout components use padding, not 
+vertical margins (top and bottom) to add spacing, else those margins get added to total height 
+and your footer gets pushed down a bit more, creating vertical scroll bars in the browser */
+
+html, body {
+  height: 100%;
+  background-color: #e3e6ea;
+}
+
+header {
+  background-color: #550e67;
+  text-align: center;
+  height: 165px;
+  position: relative;
+  width: 100%;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+  width: 100%;
+}
+
+header div {
+  line-height: 165px;
+  vertical-align: middle;
+  position: relative;
+}
+
+header div img {
+  width: 150px;
+  height: 150px;
+  vertical-align: middle;
+  position: relative;
+}
+
+#container {
+  min-height: 100%;
+}
+
+#main {
+  overflow:auto;
+  padding-bottom: 6em;
+}  /* must be same height as the footer */
+
+#instruction-input, #output {
+  text-align: center;
+  padding: 2em;
+  margin: 5px;
+}
+#instruction {
+  margin-bottom: 1em;
+  font-size: 1em;
+  font-family: Helvetica Neue;
+}
+
+#text {
+  height: 40px;
+}
+hr {
+  display: block;
+  position: relative;
+  padding: 0px;
+  margin: 0px auto;
+  height: 0;
+  width: 90%;
+  max-height: 0;
+  font-size: 1px;
+  line-height: 0;
+  clear: both;
+  border: none;
+  border-top: 1px solid #aaaaaa;
+  border-bottom: 1px solid #ffffff;
+}
+  
+#output {
+  min-height: 30%;
+}
+
+.entries {
+  padding: 5px;
+  font-size: 1em;
+  font-family: Helvetica Neue;
+}
+
+footer {
+  position: relative;
+  clear:both;
+  background-color: #550e67;
+  text-align: center;
+  height: 6em;
+  margin-top: -6em;
+  clear: both;
+  width: 100%;
+  box-shadow: 0px -1px 1px rgba(0, 0, 0, 0.5);
+} 
+footer small {
+  font: 0.8em "Helvetica Neue"; /*16px/16px*/
+  color: white;
+  font-weight: bold;
+  position: relative;
+  top: 30%;
+}
+
+
+
+
+/* IMPORTANT
+
+You also need to include this conditional style in the <head> of your HTML file to feed this style to IE 6 and lower and 8 and higher.
+
+<!--[if !IE 7]>
+  <style type="text/css">
+    #wrap {display:table;height:100%}
+  </style>
+<![endif]-->
+
+*/
